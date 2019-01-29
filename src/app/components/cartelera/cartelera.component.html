@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .imgGde {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+        }
+        
+        .imgPqe {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+        }
+    </style>
+
+    <div class="container" style="margin-top:5px;">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-md-12 imgPqe" [ngStyle]="{ 'background-image': 'url( https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/07/08dbacaf-pelicula.jpg )'  }"></div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/07/08dbacaf-pelicula.jpg )'  }"></div>
+                    <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/07/08dbacaf-pelicula.jpg )'  }"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+
+                <div class="row ">
+                    <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/07/08dbacaf-pelicula.jpg )'  }"></div>
+                    <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/07/08dbacaf-pelicula.jpg )'  }"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 imgPqe" [ngStyle]="{ 'background-image': 'url( https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/07/08dbacaf-pelicula.jpg )'  }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
