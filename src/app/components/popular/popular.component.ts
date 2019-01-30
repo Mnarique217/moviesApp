@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeliculasService } from 'src/app/services/peliculas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-popular',
@@ -9,13 +10,23 @@ import { PeliculasService } from 'src/app/services/peliculas.service';
 export class PopularComponent implements OnInit {
 
   items: any[] = [];
-  constructor(public _ps: PeliculasService) {
-    this._ps.getPopulares().subscribe((data) => {
+  constructor(public _ps: PeliculasService, private router: Router) {
+    this._ps.getPopulares().then((result: any) => this.items = result); // seems a mistake, but is just tslint
+
+  /*  this._ps.getPopulares().subscribe((data) => {
       this.items = data.json().results;
       console.log(this.items);
-    });
+    });*/
   }
   ngOnInit() {
   }
 
+
+  verMas(idx: number) {
+    this.router.navigate(['/pelicula', idx]);
+   }
+
 }
+
+
+

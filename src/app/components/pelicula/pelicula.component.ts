@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeliculasService } from 'src/app/services/peliculas.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pelicula',
@@ -8,10 +9,14 @@ import { PeliculasService } from 'src/app/services/peliculas.service';
 })
 export class PeliculaComponent implements OnInit {
   items: any[] = [];
-  constructor(public _ps: PeliculasService) {
-    this._ps.getPopulares().subscribe((data) => {
-      this.items = data.json().results;
-      console.log(this.items);
+  movie: any;
+  constructor(public _ps: PeliculasService, private actRoute: ActivatedRoute) {
+
+    this.actRoute.params.subscribe(param => {
+      this.movie = this._ps.getMovie(param['pelicula']);
+      if (!this.movie ) {
+        alert('no popular or billboard load');
+      }
     });
   }
 

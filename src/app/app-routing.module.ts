@@ -5,11 +5,10 @@ import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { PopularComponent } from './components/popular/popular.component';
 
 const routes: Routes = [
-  {path: 'pelicula', component: PeliculaComponent},
+  {path: 'pelicula/:pelicula', component: PeliculaComponent},
   {path: 'cartelera', component: CarteleraComponent},
-  {path: 'popular', component: PopularComponent},
-  {path: '**', component: CarteleraComponent}
-];
+  {path: '**', component: PopularComponent},
+  {path: 'popular', component: PopularComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

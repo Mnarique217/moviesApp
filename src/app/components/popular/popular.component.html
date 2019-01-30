@@ -12,12 +12,12 @@
     <div class="constainer marginAds">
 
         <div style="display: flex; flex-wrap:wrap; justify-content:center;">
-            <div class="card" style=" width: 20rem;  margin: auto;  margin-bottom: 10px; margin-top: 10px;" *ngFor="let item of items">
+            <div class="card" style=" width: 20rem;  margin: auto;  margin-bottom: 10px; margin-top: 10px;" *ngFor="let item of items; let i=index">
                 <img style="max-width: 100%; max-height: 400px;" src="https://image.tmdb.org/t/p/w300/{{item.poster_path}}" alt="">
                 <div class="card-body">
                     <h5>{{item.title}}</h5>
                     <p style="max-lines: 3;" class="card-text">{{item.overview}}</p>
-                    <button class="btn btn-outline-primary">ver mas..</button>
+                    <button (click)="verMas(i)" class="btn btn-outline-primary">ver mas..</button>
                 </div>
             </div>
         </div>

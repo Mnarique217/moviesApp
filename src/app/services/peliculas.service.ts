@@ -6,8 +6,8 @@ import { Jsonp } from '@angular/http';
 
 @Injectable()
 export class PeliculasService {
-
-  private apikey = '544dc170e1224ff4a7f93960ec2b2b12';
+  populars: any[] ;
+  private apikey = '';
   private urlMoviedb = 'https://api.themoviedb.org/3';
 
   constructor( private jsonp: Jsonp ) {
@@ -16,8 +16,16 @@ export class PeliculasService {
 
   getPopulares() {
     const url = `${ this.urlMoviedb }/discover/movie?sort_by=popularity.desc&api_key=${ this.apikey }&language=es&callback=JSONP_CALLBACK`;
-
-    return this.jsonp.get( url );
+  return new Promise((resolve , reject) => {
+      this.jsonp.get( url ).subscribe(result => {
+        if ( result) {
+          this.populars = result.json().results;
+          resolve(this.populars);
+        } else {
+          reject(null);
+        }
+      });
+    }).catch(function () {alert('se ha presentado una anomalia'); });
   }
 
   getCartelera() {
@@ -35,4 +43,7 @@ export class PeliculasService {
                 .map( res => res.json());
   }
 
+  getMovie(idx: number) { // validate the possibility of return.
+    return this.populars[idx];
+  }
 }
