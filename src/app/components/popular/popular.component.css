@@ -1,0 +1,15 @@
+p {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.greyBackgnd {
+    background-color: #BCBCBC;
+}
+
+.marginAds {
+    width: 70%;
+    margin: auto;
+}

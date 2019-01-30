@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeliculasService } from 'src/app/services/peliculas.service';
 
 @Component({
   selector: 'app-popular',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopularComponent implements OnInit {
 
-  constructor() { }
-
+  items: any[] = [];
+  constructor(public _ps: PeliculasService) {
+    this._ps.getPopulares().subscribe((data) => {
+      this.items = data.json().results;
+      console.log(this.items);
+    });
+  }
   ngOnInit() {
   }
 
