@@ -9,13 +9,19 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PopularComponent } from './components/popular/popular.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
+import { SinImagenPipe } from './pipes/sin-imagen.pipe';
+import { HomeComponent } from './components/home/home.component';
+import { GaleriaComponent } from './components/home/galeria.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     PopularComponent,
     PeliculaComponent,
-    CarteleraComponent
+    CarteleraComponent,
+    SinImagenPipe,
+    HomeComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

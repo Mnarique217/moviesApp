@@ -1,0 +1,11 @@
+<div class="container">
+
+    <app-galeria [peliculas]="cartelera" titulo="Cartelera" *ngIf="cartelera">
+    </app-galeria>
+
+    <app-galeria [peliculas]="populares" titulo="Populares" *ngIf="populares">
+    </app-galeria>
+
+    <app-galeria [peliculas]="ninos" titulo="Contenido para niños" *ngIf="ninos">
+    </app-galeria>
+</div>

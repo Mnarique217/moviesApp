@@ -1,0 +1,35 @@
+<h1>{{titulo}}</h1>
+<div class="row">
+    <style>
+        .imgPqe {
+            width: 100%;
+            background-size: cover;
+            height: 200px;
+        }
+        
+        .imgGde {
+            width: 100%;
+            background-size: cover;
+            height: 400px;
+        }
+    </style>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-md-12 imgGde" [ngStyle]="{ 'background-image': 'url( '+( peliculas[0] | sinImagen)+' )'  }"></div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( '+( peliculas[1] | sinImagen)+' )'  }"></div>
+            <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url('+( peliculas[2] | sinImagen)+' )'  }"></div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row ">
+            <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( '+( peliculas[3] | sinImagen)+' )'  }"></div>
+            <div class="col-md-6 imgPqe" [ngStyle]="{ 'background-image': 'url( '+( peliculas[4] | sinImagen)+' )'  }"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 imgGde" [ngStyle]="{ 'background-image': 'url( '+( peliculas[5] | sinImagen)+')'  }"></div>
+        </div>
+    </div>
+
+</div>
