@@ -10,7 +10,7 @@ export class PeliculasService {
   billboard: any[] ;
   trailer: any;
   ninos: any[] ;
-  private apikey = '';
+  private apikey = '544dc170e1224ff4a7f93960ec2b2b12';
   private urlMoviedb = 'https://api.themoviedb.org/3';
   constructor( private jsonp: Jsonp ) {
 
