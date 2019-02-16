@@ -1,1 +1,160 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    padding: 0px;
+    background-color: #FDFDFD;
+}
+
+.theme_dark {
+    background-color: #343A40;
+}
+
+* {
+    margin: 0;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.poster_contaier {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    top: 10px;
+}
+
+.border_soft {
+    margin-bottom: 0px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.dark {
+    background-color: #1C203B;
+}
+
+.text_poster {
+    position: absolute;
+    bottom: 300px;
+    right: 100px;
+    color: #FFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.font_13 {
+    font-size: 13px;
+}
+
+.font_bold {
+    font: bold;
+}
+
+.poster_footer {
+    height: auto;
+    min-height: auto;
+    padding-top: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.footer_detail {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.font_white {
+    color: #FFFF;
+}
+
+.backg_warn {
+    background-color: #C61A2B;
+}
+
+.btn_rounded {
+    border-radius: 49px 49px 49px 49px;
+    -moz-border-radius: 49px 49px 49px 49px;
+    -webkit-border-radius: 49px 49px 49px 49px;
+}
+
+.poster_footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.poster_footer_item {
+    text-align: left;
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+.poster_footer_item_end {
+    text-align: right;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.poster_footer_item_rate {
+    text-align: right;
+    padding: 15px;
+    width: auto;
+    height: auto;
+}
+
+.btn_large {
+    width: 200px;
+}
+
+.font_yellow {
+    color: yellow;
+}
+
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.nav_item {
+    display: block;
+    padding: 10px;
+    width: 33%;
+    border: 1px solid white;
+    height: 30px;
+}
+
+.nav_dark {
+    background-color: #344259;
+}
+
+.nav_align_rigth {
+    text-align: right;
+}
+
+.nav_align_left {
+    text-align: left;
+}
+
+.font_white {
+    color: white;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}

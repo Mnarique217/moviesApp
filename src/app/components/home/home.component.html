@@ -1,5 +1,19 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
 
-    <app-galeria [peliculas]="cartelera" titulo="Cartelera" *ngIf="cartelera">
-    </app-galeria>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <app-slider [sliderMovies]="populares | slice:0 :10" *ngIf="populares"></app-slider>
+        <app-galeria [peliculas]="cartelera" titulo="Cartelera" *ngIf="cartelera">
+        </app-galeria>
+    </div>
+</body>
+
+</html>

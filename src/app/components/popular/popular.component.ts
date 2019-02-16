@@ -11,7 +11,10 @@ export class PopularComponent implements OnInit {
 
   items: any[] = [];
   constructor(public _ps: PeliculasService, private router: Router) {
-    this._ps.getPopulares().then((result: any) => this.items = result); // seems a mistake, but is just tslint
+    this._ps.getPopulares().then((result: any) => {
+      this.items = result;
+      console.log(this.items);
+    }); // seems a mistake, but is just tslint
 
   /*  this._ps.getPopulares().subscribe((data) => {
       this.items = data.json().results;
@@ -23,7 +26,7 @@ export class PopularComponent implements OnInit {
 
 
   verMas(idx: number) {
-    this.router.navigate(['/pelicula', idx]);
+    this.router.navigate(['/movie', idx]);
    }
 
 }

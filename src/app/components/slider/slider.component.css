@@ -1,0 +1,49 @@
+.margin-top20 {
+    margin-top: 20px !important;
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+.slider-bnt-bef,
+.slider-btn-next {
+    border-radius: 50%;
+    width: 30px;
+    background-color: rgba(89, 87, 83, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: monospace;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider-bnt-bef {
+    left: 25px;
+}
+
+.slider-btn-next {
+    right: 25px;
+}
+
+.slider-btn-dark:hover {
+    background-color: rgba(89, 87, 83, 0.9);
+}

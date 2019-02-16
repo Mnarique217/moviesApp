@@ -20,7 +20,7 @@
 <div class="container" style="  display: flex; flex-wrap: wrap;">
     <div class="card" style=" border: none; width: 15rem;" *ngFor="let item of peliculas">
         <div class="card-body" style="margin: 3px;">
-            <img class="card-img-top rounded" width="100" height="280" src="https://image.tmdb.org/t/p/w300/{{item.poster_path}}" alt="">
+            <img class="card-img-top rounded" width="100" height="auto" src="https://image.tmdb.org/t/p/w300/{{item.poster_path}}" alt="">
             <h5 class="card-title movie_text"><b> {{item.title}}</b> ({{ item.release_date | date:'y'}})</h5>
             <p class="card-text movie_text"><b>Popularity</b>: {{item.popularity}}</p>
 

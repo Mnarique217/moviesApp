@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body style="background-color: #FDFDFD;">
+
+    <div class="poster_contaier dark border_soft">
+
+        <img style="width: 100%;" src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}">
+        <div class="text_poster">
+            <h2 class="font_bold">{{movie.title}}</h2>
+            <p class="font_13">{{movie.overview}}</p>
+        </div>
+
+        <div class="poster_footer">
+            <div class="poster_footer_item_rate font_white">
+                <button mat-icon-button class="font_yellow"></button> 4.5/10
+            </div>
+            <div class="poster_footer_item font_white">Run time: 2hrs 17 mins</div>
+            <div class="poster_footer_item font_white">Rated: PG</div>
+            <div class="poster_footer_item font_white">Action, Adventure, Sci-fi</div>
+            <div class="poster_footer_item_end ">
+                <button mat-raised-button class="backg_warn btn_rounded font_white btn_large">Wach triler</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
