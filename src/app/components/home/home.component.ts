@@ -15,14 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(public ps: PeliculasService) {
     this.ps.getCartelera().then((data: any) => {
       this.cartelera = data;
-   this.cartelera.forEach((e) => {
-    console.log(e.poster_path);
-    console.log('\n');
-    console.log(e.overview);
-    console.log(e.title);
     });
-    });
- 
 
     this.ps.getPopulares().then((data: any) => {
       this.populares = data;

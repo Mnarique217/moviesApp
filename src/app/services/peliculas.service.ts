@@ -34,7 +34,7 @@ export class PeliculasService {
   getCartelera() {
     const f = new Date();
     const  t = new Date();
-    t.setDate(f.getDate() + 9 );
+    t.setDate(f.getDate() + 9 ); // 9 days more fron today
     const from = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
     const to = `${t.getFullYear()}-${t.getMonth() + 1}-${t.getDate()}`;
     // tslint:disable-next-line:max-line-length

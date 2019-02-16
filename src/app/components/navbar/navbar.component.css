@@ -39,6 +39,12 @@
     border: none;
 }
 
+a {
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Oswald', sans-serif;
+}
+
 .search-input {
     border-radius: 2px;
     -moz-border-radius: 2px;

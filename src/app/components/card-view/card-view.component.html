@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="movie-container card-custom-dark margin-top10" *ngIf="readyToDisplay">
+
+    <div class="card-custom-toolbar">
+        <div class="card-custom-title">
+            {{cardTitle}}
+        </div>
+
+        <div (click)="card_next()" class="card-custom-btn-next card-custom-btn-dark">&#62;</div>
+        <div (click)="card_prev()" class="card-custom-bnt-bef card-custom-btn-dark">&#60;</div>
+    </div>
+
+    <div id="{{idCard}}" class="card-custom ">
+        <div class="item-card-custom " *ngFor="let cardMovie of moviesToDisplay">
+            <div class="card-custom-item-image">
+                <img widht="" src="https://image.tmdb.org/t/p/original/{{cardMovie.poster_path}}">
+            </div>
+            <div class="card-custom-item-title">
+                <b>{{cardMovie.title}}</b>
+            </div>
+            <div class="card-custom-item-text">
+                {{cardMovie.overview}}
+            </div>
+            <div class="card-custom-item-text">
+                (Votes AVG) {{cardMovie.vote_average}}<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,7 +1,7 @@
 <div class="slider-container margin-top20">
 
     <div id="slide" class="slider">
-        <section *ngFor="let movie of sliderMovies"><img widht="" src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}"></section>
+        <section *ngFor="let movie of sliderMoviesToDisplay"><img widht="" src="https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}"></section>
     </div>
 
     <div id="btn_next" (click)="slide_next()" class="slider-btn-next slider-btn-dark">&#62;</div>

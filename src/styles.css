@@ -15,6 +15,14 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+.margin-top10 {
+    margin-top: 10px !important;
+}
+
+.margin-bottom70 {
+    margin-bottom: 70px !important;
+}
+
 .poster_contaier {
     width: 100%;
     max-width: 1200px;

@@ -8,25 +8,24 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PopularComponent } from './components/popular/popular.component';
 
-import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { SinImagenPipe } from './pipes/sin-imagen.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { GaleriaComponent } from './components/home/galeria.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { CardViewComponent } from './components/card-view/card-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     PopularComponent,
-
-    CarteleraComponent,
     SinImagenPipe,
     HomeComponent,
     GaleriaComponent,
     MovieComponent,
-    SliderComponent
+    SliderComponent,
+    CardViewComponent
   ],
   imports: [
     BrowserModule,
